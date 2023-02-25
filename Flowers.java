@@ -1,3 +1,32 @@
+/*
+Given a garden represented by a grid with non negative integers and 0's, Every flower has a scent rating, and as you move away from the flower, the scent rating decreases.  
+
+Step 1:
+build a new garden that determines the scent power at any position.
+
+Step 2:
+From any position in the new garden, find the most fragrant flower from that position
+
+A flower is determined by a scent rating that is higher than all its neighbors.  (For simplicity, diagonals are NOT considered neighbors).   
+
+Example, the below garden as 2 flowers, one at position (1,1) with a scent of 4, and another flower at position (4,4) with a scent of 2.  
+
+0 0 0 0 0
+0 4 0 0 0
+0 0 0 0 0
+0 0 0 0 2
+
+After populating the garden with the correct scents in each position, it will look like this. For scent ratings that conflict with other scent ratings,
+the highest scent will be used
+
+2 3 2 1 0
+3 4 3 2 1
+2 3 2 1 1
+1 2 1 1 2
+
+Then starting at position (3, 3), the program should be able to find it's way to the flower represented at position (1, 1).
+*/
+
 import java.util.*;
 
 /* Time:  O(n * m) where n is the length of garden, and m is height  
