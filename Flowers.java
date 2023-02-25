@@ -1,7 +1,7 @@
 import java.util.*;
 
 /* Time:  O(n * m) where n is the length of garden, and m is height  
-   Space: (n * m)  Space required for auxillary grid
+   Space: O(n * m)  Space required for auxillary grid
 */
 
 public class Main
